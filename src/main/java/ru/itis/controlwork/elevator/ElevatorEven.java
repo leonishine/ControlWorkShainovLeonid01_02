@@ -1,10 +1,13 @@
 package ru.itis.controlwork.elevator;
 
 public class ElevatorEven extends Elevator{
-    private static Situation type = Situation.EVEN;
+    private static final Situation type = Situation.EVEN;
 
     public ElevatorEven(ElevatorState state) {
         this.elevatorState = state;
+    }
+    public Situation getType() {
+        return type;
     }
 
     @Override

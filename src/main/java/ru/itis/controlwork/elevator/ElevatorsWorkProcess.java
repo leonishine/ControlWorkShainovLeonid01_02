@@ -36,19 +36,19 @@ public class ElevatorsWorkProcess {
                 try {
                     caller.call(Situation.EVEN, destEven, elevators);
                 } catch (NoFreeElevatorsException e1) {
-                    System.out.println("Нет свободных нечётных лифтов, ожидайте");
+                    System.out.println("Нет свободных чётных лифтов на " + destEven + " этаж, ожидайте");
                 }
 
                 try {
                     caller.call(Situation.ODD, destOdd, elevators);
                 } catch (NoFreeElevatorsException e2) {
-                    System.out.println("Нет свободных чётных лифтов, ожидайте");
+                    System.out.println("Нет свободных нечётных лифтов на " + destOdd + ", ожидайте");
                 }
 
                 try {
                     caller.call(Situation.TEACHER, destTeacher, elevators);
                 } catch (NoFreeElevatorsException e3) {
-                    System.out.println("Нет свободных преподавательских лифтов, ожидайте");
+                    System.out.println("Нет свободных преподавательских лифтов на " + destTeacher + ", ожидайте");
                 }
 
             } else {

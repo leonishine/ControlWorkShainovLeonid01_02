@@ -9,6 +9,7 @@ public class Call implements ICall  {
                 elevators[i].setDestinationFloor(destination);
                 flag = true;
                 break;
+
             }
         }
 

@@ -1,10 +1,14 @@
 package ru.itis.controlwork.elevator;
 
 public class ElevatorOdd extends Elevator {
-    private static Situation type = Situation.ODD;
+    private static final Situation type = Situation.ODD;
 
     public ElevatorOdd(ElevatorState state) {
         this.elevatorState = state;
+    }
+
+    public Situation getType() {
+        return type;
     }
 
     @Override
